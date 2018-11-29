@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:n}=window.ionicpwaelements;class t{render(){return n("div",null,n("ion-modal-controller",null))}static get is(){return"ion-pwa-action-sheet"}static get encapsulation(){return"shadow"}}export{t as IonPwaActionSheet};

@@ -1,0 +1,1 @@
+// ionicpwaelements: CommonJS Main

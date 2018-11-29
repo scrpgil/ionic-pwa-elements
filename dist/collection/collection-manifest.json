@@ -1,0 +1,218 @@
+{
+  "components": [
+    {
+      "tag": "ion-pwa-action-sheet",
+      "dependencies": [
+        "ion-modal-controller"
+      ],
+      "componentClass": "ActionSheetPWA",
+      "componentPath": "components/action-sheet/action-sheet.js",
+      "styles": {},
+      "shadow": true
+    },
+    {
+      "tag": "ion-pwa-camera",
+      "dependencies": [],
+      "componentClass": "CameraPWA",
+      "componentPath": "components/camera/camera.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/camera/camera.css"
+          ]
+        }
+      },
+      "assetPaths": [
+        "components/camera/icons"
+      ],
+      "props": [
+        {
+          "name": "facingMode",
+          "type": "String",
+          "attr": "facing-mode"
+        }
+      ],
+      "states": [
+        {
+          "name": "cameraError"
+        },
+        {
+          "name": "cameraErrorString"
+        },
+        {
+          "name": "flashIndex"
+        },
+        {
+          "name": "photo"
+        },
+        {
+          "name": "photoSrc"
+        },
+        {
+          "name": "showShutterOverlay"
+        }
+      ],
+      "context": [
+        {
+          "name": "isServer",
+          "id": "isServer"
+        },
+        {
+          "name": "publicPath",
+          "id": "publicPath"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "onPhoto"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "ion-pwa-camera-modal",
+      "dependencies": [
+        "ion-modal-controller",
+        "ion-pwa-camera"
+      ],
+      "componentClass": "CameraModalPWA",
+      "componentPath": "components/camera-modal/camera-modal.js",
+      "styles": {},
+      "methods": [
+        {
+          "name": "dismiss"
+        },
+        {
+          "name": "present"
+        }
+      ],
+      "events": [
+        {
+          "event": "onPhoto"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [
+    {
+      "name": "@ionic/core",
+      "tags": [
+        "ion-action-sheet",
+        "ion-action-sheet-controller",
+        "ion-alert",
+        "ion-alert-controller",
+        "ion-anchor",
+        "ion-animation-controller",
+        "ion-app",
+        "ion-avatar",
+        "ion-back-button",
+        "ion-backdrop",
+        "ion-badge",
+        "ion-button",
+        "ion-buttons",
+        "ion-card",
+        "ion-card-content",
+        "ion-card-header",
+        "ion-card-subtitle",
+        "ion-card-title",
+        "ion-checkbox",
+        "ion-chip",
+        "ion-chip-button",
+        "ion-chip-icon",
+        "ion-col",
+        "ion-content",
+        "ion-datetime",
+        "ion-fab",
+        "ion-fab-button",
+        "ion-fab-list",
+        "ion-footer",
+        "ion-grid",
+        "ion-header",
+        "ion-img",
+        "ion-infinite-scroll",
+        "ion-infinite-scroll-content",
+        "ion-input",
+        "ion-item",
+        "ion-item-divider",
+        "ion-item-group",
+        "ion-item-option",
+        "ion-item-options",
+        "ion-item-sliding",
+        "ion-label",
+        "ion-list",
+        "ion-list-header",
+        "ion-loading",
+        "ion-loading-controller",
+        "ion-menu",
+        "ion-menu-button",
+        "ion-menu-controller",
+        "ion-menu-toggle",
+        "ion-modal",
+        "ion-modal-controller",
+        "ion-nav",
+        "ion-nav-pop",
+        "ion-nav-push",
+        "ion-nav-set-root",
+        "ion-note",
+        "ion-picker",
+        "ion-picker-column",
+        "ion-picker-controller",
+        "ion-popover",
+        "ion-popover-controller",
+        "ion-radio",
+        "ion-radio-group",
+        "ion-range",
+        "ion-refresher",
+        "ion-refresher-content",
+        "ion-reorder",
+        "ion-reorder-group",
+        "ion-ripple-effect",
+        "ion-route",
+        "ion-route-redirect",
+        "ion-router",
+        "ion-router-outlet",
+        "ion-row",
+        "ion-searchbar",
+        "ion-segment",
+        "ion-segment-button",
+        "ion-select",
+        "ion-select-option",
+        "ion-select-popover",
+        "ion-skeleton-text",
+        "ion-slide",
+        "ion-slides",
+        "ion-spinner",
+        "ion-split-pane",
+        "ion-tab",
+        "ion-tab-bar",
+        "ion-tab-button",
+        "ion-tabs",
+        "ion-text",
+        "ion-textarea",
+        "ion-thumbnail",
+        "ion-title",
+        "ion-toast",
+        "ion-toast-controller",
+        "ion-toggle",
+        "ion-toolbar",
+        "ion-virtual-scroll"
+      ]
+    },
+    {
+      "name": "ionicons",
+      "tags": [
+        "ion-icon"
+      ]
+    }
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

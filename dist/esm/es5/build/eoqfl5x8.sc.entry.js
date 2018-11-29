@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+import{h}from"../ionicpwaelements.core.js";var ActionSheetPWA=function(){function e(){}return e.prototype.render=function(){return h("div",null,h("ion-modal-controller",null))},Object.defineProperty(e,"is",{get:function(){return"ion-pwa-action-sheet"},enumerable:!0,configurable:!0}),Object.defineProperty(e,"encapsulation",{get:function(){return"shadow"},enumerable:!0,configurable:!0}),e}();export{ActionSheetPWA as IonPwaActionSheet};

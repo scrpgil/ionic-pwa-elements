@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+ionicpwaelements.loadBundle("eoqfl5x8",["exports"],function(e){var n=window.ionicpwaelements.h,o=function(){function e(){}return e.prototype.render=function(){return n("div",null,n("ion-modal-controller",null))},Object.defineProperty(e,"is",{get:function(){return"ion-pwa-action-sheet"},enumerable:!0,configurable:!0}),Object.defineProperty(e,"encapsulation",{get:function(){return"shadow"},enumerable:!0,configurable:!0}),e}();e.IonPwaActionSheet=o,Object.defineProperty(e,"__esModule",{value:!0})});
